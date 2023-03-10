@@ -1,0 +1,36 @@
+header{
+    padding: 1rem 15rem 0 15rem;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+
+nav a { 
+    color: white;
+    text-decoration: none;
+}
+
+.left img{
+    height:2rem;
+     width:6rem
+}
+
+.right a {
+    padding-left: 20px;
+}
+
+.right a:hover{
+    color:rgb(119, 159, 160)
+ }
+
+ @media screen  and (max-width:1020px) {
+    header{
+        padding: 0;
+        background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    }
+}

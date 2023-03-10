@@ -1,0 +1,32 @@
+.faq__bg{
+    padding: 2rem 10rem 2rem 10rem;
+    height: auto;
+    background-color: rgb(36, 36, 36);
+    background-image: url('../../assets/f.png');
+    background-position: 10% 90%  ;
+    background-repeat: no-repeat;
+    background-size: 13%;
+}
+
+.faq__bg h1{
+    color:  rgb(88, 173, 230);
+    text-align: center;
+}
+
+.faq__main{
+    color: white;
+    font-weight: lighter;
+    padding: 0 5rem 0 5rem;
+}
+
+@media screen  and (max-width:760px) {
+    .faq__bg{
+        height: auto;
+        padding: 0 0 2rem 0;
+        background-color: rgb(36, 36, 36);
+        background-image: url('../../assets/f.png');
+        background-position: 10% 90%  ;
+        background-repeat: no-repeat;
+        background-size: 13%;
+    }
+}

@@ -1,0 +1,13 @@
+.contact__bg{
+    height: auto;
+    padding: 2rem 0 2rem 0;
+    background-color: rgb(36, 36, 36);
+    background-image: url('../../assets/q.png');
+    background-position: 10% 90%  ;
+    background-repeat: no-repeat;
+    background-size: 13%;
+}
+.contact__bg h1{
+    color:  rgb(88, 173, 230);
+    text-align: center;
+}
