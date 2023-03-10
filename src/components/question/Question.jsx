@@ -18,6 +18,7 @@ function Question() {
       headers: {'Content-Type':'application/json'},
         method:'POST',
         body: JSON.stringify({name, email, question, message}),
+        credentials: 'include',
     });
     if (response.status === 200){
         alert("Message Recieved, Please refresh the page") 

@@ -1,1 +1,1 @@
-export const API = "https://redphantom-faq-backend.onrender.com";
+export const API = "https://redphantom-faq-backend.vercel.app";

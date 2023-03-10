@@ -18,6 +18,7 @@ function Faq() {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
+          credentials: 'include',
         },
       });
         try {
