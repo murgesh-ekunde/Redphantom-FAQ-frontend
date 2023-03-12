@@ -1,1 +1,1 @@
-export const API = "https://redphantom-faq-backend.vercel.app";
+export const API = "http://localhost:4000";
