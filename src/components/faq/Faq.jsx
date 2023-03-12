@@ -7,6 +7,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import axios from 'axios';
 
 function Faq() {
 
@@ -14,13 +15,7 @@ function Faq() {
     const [expanded, setExpanded] = useState(false);
     
     const getQuestion = async () => {
-        const res = await fetch(`${API}/question`,{
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          credentials: 'include',
-        },
-      });
+      const res = await  axios.get(`${API}/question`)
         try {
             const questionJson = await res.json();
             const data = (questionJson.data);
