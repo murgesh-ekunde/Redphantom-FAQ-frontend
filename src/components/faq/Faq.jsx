@@ -20,7 +20,7 @@ function Faq() {
             const questionJson = await res.json();
             const data = (questionJson.data);
             console.log(data)
-            setQuestions(data)
+            return setQuestions(data)
         } catch (error) {
             console.log(error)
         }
