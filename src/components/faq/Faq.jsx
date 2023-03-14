@@ -15,16 +15,12 @@ function Faq() {
     const [expanded, setExpanded] = useState(false);
     
     const getQuestion = async () => {
-      const res = await  axios.get(`${API}/question`)
-        try {
-            const questionJson = await res.json();
-            const data = (questionJson.data);
-            console.log(data)
-            return setQuestions(data)
-        } catch (error) {
-            console.log(error)
-        }
-    }
+      return axios.get(`${API}/question`,{
+      headers: {'Content-Type':'application/json'},
+    }).then( res =>{setQuestions(res.data)})
+    .catch(err=>{console.log(err)})
+  }
+
     useEffect(()=>{
    getQuestion()
 },[])
